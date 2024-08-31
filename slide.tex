@@ -18,9 +18,22 @@
 %\setmainfont{Times New Roman}
 %\setsansfont{Fira Code}
 
-\setmonofont[Mapping={}]{CMU Typewriter Text}	%英文引号之类的正常显示，相当于设置英文字体
-\setsansfont{CMU Typewriter Text} %设置英文字体 Monaco, Consolas,  Fantasque Sans Mono
-\setmainfont{CMU Typewriter Text} %设置英文字体
+%\setmonofont[Mapping={}]{CMU Typewriter Text}	%英文引号之类的正常显示，相当于设置英文字体
+%\setsansfont{CMU Typewriter Text} %设置英文字体 Monaco, Consolas,  Fantasque Sans Mono
+%\setmainfont{CMU Typewriter Text} %设置英文字体
+
+%\setmonofont[Mapping={}]{Iosevka}
+%\setsansfont{Iosevka}
+%\setmainfont{Iosevka}
+
+%\setmonofont[Mapping={}]{JetBrains Mono}
+%\setsansfont{JetBrains Mono}
+%\setmainfont{JetBrains Mono}
+
+\setmonofont[Mapping={}]{Victor Mono}
+\setsansfont{Victor Mono}
+\setmainfont{Victor Mono}
+
 
 \author{Nguyễn \& Tô}
 \title{HOU Beamer Theme}
@@ -90,66 +103,84 @@
 
 \section{Tình trạng nghiên cứu} % 研究现状
 
-\subsection{Beamer主题分类}
-
+%\subsection{Beamer主题分类}
+\subsection{Beamer Phân loại chủ đề}
 \begin{frame}
     \begin{itemize}
-        \item 有一些 \LaTeX{} 自带的
-        \item 本模板来源自 \newline \url{https://www.latexstudio.net/archives/4051.html}
-        \item 但是最初的 \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin}已经失效了
-         \item 本模板在Trinkle23897的THU-Beamer-Theme基础上修改而成，感谢苏鹿鸣与\begin{otherlanguage*}{vietnamese}Nguyễn Mơ\end{otherlanguage*}同学！\href{https://github.com/Trinkle23897/THU-Beamer-Theme}{\color{red}{戳我}}
+        % \item 有一些 \LaTeX{} 自带的
+        \item \LaTeX{} đi kèm với một số mẫu chủ đề
+        \item Mẫu này đến từ: \newline \url{https://www.latexstudio.net/archives/4051.html}
+        %\item 但是最初的 \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin} 已经失效了
+        \item Mẫu nguyên bản nhất \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin} Đã hết hạn.
+        %\item 本模板在Trinkle23897的THU-Beamer-Theme基础上修改而成，感谢苏鹿鸣与 Nguyễn Mơ同学！\href{https://github.com/Trinkle23897/THU-Beamer-Theme}{\color{red}{戳我}}
+        \item Mẫu này được Nguyễn \& Tô chỉnh sửa dựa trên THU-Beamer-Theme!\href{https://github.com/Suluming1999/HOU-Beamer-Theme}{\color{red}{bấm}}
+        
     \end{itemize}
 \end{frame}
 
 
 \section{Nội dung nghiên cứu} % 研究内容
 
-\subsection{美化主题}
-
-\begin{frame}{这一份主题与原始的THU Beamer Theme区别在于}
+%\subsection{美化主题}
+\subsection{Làm đẹp chủ đề}
+%\begin{frame}{这一份主题与原始的THU Beamer Theme区别在于}
+\begin{frame}{Sự khác biệt giữa chủ đề này và chủ đề THU Beamer gốc là ở chỗ}
     \begin{itemize}
-        \item 顶栏的小点变成一行而不是多行
-        \item 中文采用楷书
-        \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
-        \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
+        % \item 顶栏的小点变成一行而不是多行
+        \item Các dấu chấm ở thanh trên cùng trở thành một dòng thay vì nhiều dòng
+        \item Tiếng Việt sử dụng phông chữ CMU Typewriter.
+        \item Để biết thêm các chức năng của mẫu này, vui lòng tham khảo: \url{https://www.latexstudio.net/archives/4051.html}
+        \item Sau đây liệt kê một số ứng dụng của Beamer, một số đoạn trích từ: \url{https://tuna.moe/event/2018/latex/}
     \end{itemize}
 \end{frame}
 
-\subsection{如何更好地做Beamer}
-
+% \subsection{如何更好地做Beamer}
+\subsection{Làm thế nào để trở thành một Beamer tốt hơn}
 \begin{frame}{Why Beamer}
     \begin{itemize}
-        \item \LaTeX 广泛用于学术界，期刊会议论文模板
+        % \item \LaTeX 广泛用于学术界，期刊会议论文模板
+        \item \LaTeX\; được sử dụng rộng rãi trong giới học thuật, mẫu bài báo hội nghị tạp chí
     \end{itemize}
-    \begin{table}[h]
+    \begin{table}[H]
         \centering
+        % \scriptsize
+        \tiny
         \begin{tabular}{c|c}
             Microsoft\textsuperscript{\textregistered}  Word & \LaTeX \\
             \hline
-            文字处理工具 & 专业排版软件 \\
-            容易上手，简单直观 & 容易上手 \\
-            所见即所得 & 所见即所想，所想即所得 \\
-            高级功能不易掌握 & 进阶难，但一般用不到 \\
-            处理长文档需要丰富经验 & 和短文档处理基本无异 \\
-            花费大量时间调格式 & 无需担心格式，专心作者内容 \\
-            公式排版差强人意 & 尤其擅长公式排版 \\
-            二进制格式，兼容性差 & 文本文件，易读、稳定 \\
-            付费商业许可 & 自由免费使用 \\
+            % 文字处理工具 & 专业排版软件 \\
+            Công cụ xử lý văn bản & Phần mềm sắp chữ chuyên nghiệp \\
+            %容易上手，简单直观 & 容易上手 \\
+            Dễ sử dụng, đơn giản và trực quan & Dễ dàng sử dụng \\
+            % 所见即所得 & 所见即所想，所想即所得 \\
+            Những gì bạn thấy là những gì bạn nhận được & Yêu cầu lập trình để xác định \\
+            % 高级功能不易掌握 & 进阶难，但一般用不到 \\
+            Các chức năng nâng cao rất khó để thành thạo & Khó thăng tiến nhưng nhìn chung là không cần thiết \\
+            % 处理长文档需要丰富经验 & 和短文档处理基本无异 \\
+            Xử lý văn bản dài đòi hỏi kinh nghiệm sâu rộng & Về cơ bản giống như xử lý tài liệu ngắn \\
+            % 花费大量时间调格式 & 无需担心格式，专心作者内容 \\
+            Dành nhiều thời gian để điều chỉnh định dạng & Chỉ cần tập trung vào việc tạo nội dung \\
+            % 公式排版差强人意 & 尤其擅长公式排版 \\
+            Việc sắp chữ công thức không đạt yêu cầu & Soạn công thức tốt \\
+            % 二进制格式，兼容性差 & 文本文件，易读、稳定 \\
+            Định dạng nhị phân, khả năng tương thích kém & Tệp văn bản, dễ đọc và ổn định \\
+            % 付费商业许可 & 自由免费使用 \\
+            Giấy phép thương mại trả phí & miễn phí sử dụng\\
         \end{tabular}
     \end{table}
 \end{frame}
 
 \begin{frame}{Ví dụ về sắp chữ}  % 排版举例
-    \begin{exampleblock}{Công thức không đánh số} % 无编号公式，记得 加 * 
-        \begin{equation*}
-            J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-        \end{equation*}
-    \end{exampleblock}
+	\text{\textcolor{purple}{Công thức không đánh số}}
+    %\begin{exampleblock}{Công thức không đánh số} % 无编号公式，记得 加 * 
+      %  \begin{equation*}
+        $$J(\theta)=\mathbb{E}_{\pi_\theta}[G_t]=\sum_{s\in\mathcal{S}}d^\pi(s)V^\pi(s)=\sum_{s\in\mathcal{S}}d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)$$
+       % \end{equation*}
+    %\end{exampleblock}
     % \begin{exampleblock}{多行多列公式\footnote{如果公式中有文字出现，请用 $\backslash$mathrm\{\} 或者 $\backslash$text\{\} 包含，不然就会变成 $clip$，在公式里看起来比 $\mathrm{clip}$ 丑非常多。}}
     % \begin{exampleblock}{Công thức nhiều hàng và nhiều cột\footnote{Nếu có văn bản trong công thức, vui lòng sử dụng $\backslash$mathrm\{\} hoặc $\backslash$text\{\} để đưa nó vào, nếu không nó sẽ trở thành một đoạn $clip$, trông xấu hơn nhiều so với $\mathrm{clip}$ trong công thức.}}
    
-    \begin{exampleblock}{Công thức nhiều hàng và nhiều cột\footnote{Nếu có văn bản trong công thức, vui lòng sử dụng $\backslash$mathrm\{\} hoặc $\backslash$text\{\} để đưa văn bản đó vào.}} 
-    	
+    \begin{exampleblock}{Công thức nhiều hàng và nhiều cột\footnote{Nếu có văn bản trong công thức, vui lòng sử dụng $\backslash$mathrm\{\} hoặc $\backslash$text\{\} để đưa văn bản đó vào.}}
         % 使用 & 分隔
         \begin{align}
             Q_\mathrm{target}&=r+\gamma Q^\pi(s^\prime, \pi_\theta(s^\prime)+\epsilon)\\
@@ -214,7 +245,7 @@
         \footnotesize
         \begin{tabular}{llll}
             \cmd{chapter} & \cmd{section} & \cmd{subsection} & \cmd{paragraph} \\
-            章 & 节 & 小节 & 带题头段落 \\\hline
+            chương & 节 & 小节 & 带题头段落 \\\hline
             \cmd{centering} & \cmd{emph} & \cmd{verb} & \cmd{url} \\
             居中对齐 & 强调 & 原样输出 & 超链接 \\\hline
             \cmd{footnote} & \cmd{item} & \cmd{caption} & \cmd{includegraphics} \\
